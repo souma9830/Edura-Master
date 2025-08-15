@@ -1,0 +1,319 @@
+"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium CSS Component Library - Award Winning UI Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-mode">
+    
+    <!-- Premium Navigation -->
+    <nav class="premium-nav glass-effect">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-icon glow-effect">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <span class="logo-text gradient-text">PremiumUI</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home" class="nav-link magnetic-hover active">Home</a>
+                <a href="buttons.html" class="nav-link magnetic-hover">Buttons</a>
+                <a href="cards.html" class="nav-link magnetic-hover">Cards</a>
+                <a href="navbars.html" class="nav-link magnetic-hover">Navbars</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="premium-btn primary-btn pulse-effect">
+                    <span>Get Started</span>
+                    <div class="btn-particles"></div>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="#home" class="nav-link magnetic-hover active">Home</a>
+                <a href="buttons.html" class="nav-link magnetic-hover">Buttons</a>
+                <a href="cards.html" class="nav-link magnetic-hover">Cards</a>
+                <a href="navbars.html" class="nav-link magnetic-hover">Navbars</a>
+            </div>
+            <div class="mobile-menu-actions">
+                <button class="theme-toggle-btn" id="mobileThemeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="premium-btn primary-btn">
+                    <span>Get Started</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Advanced Animations -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="floating-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="orb orb-4"></div>
+            </div>
+            <div class="grid-background"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Premium CSS</span>
+                    <span class="title-line gradient-text">Component Library</span>
+                    <span class="title-line">Award-Winning UI</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Experience the future of web design with our premium component library. 
+                    Featuring cutting-edge animations, glassmorphism effects, and responsive design 
+                    that will make your project stand out from the competition.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number count-up" data-count="30">0</span>
+                        <span class="stat-label">Components</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number count-up" data-count="100">0</span>
+                        <span class="stat-label">Variants</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number count-up" data-count="5">0</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="premium-btn primary-btn holographic-effect">
+                        <span>Explore Components</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="premium-btn ghost-btn magnetic-hover">
+                        <span>View Demo</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="component-preview">
+                    <div class="preview-card glass-effect">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="card-title">Component Preview</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="preview-buttons">
+                                <button class="mini-btn primary">Primary</button>
+                                <button class="mini-btn secondary">Secondary</button>
+                                <button class="mini-btn accent">Accent</button>
+                            </div>
+                            <div class="preview-cards">
+                                <div class="mini-card"></div>
+                                <div class="mini-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Premium Features</h2>
+                <p class="section-description">Everything you need to create stunning interfaces</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Advanced Animations</h3>
+                    <p>GSAP powered animations with smooth transitions and micro-interactions</p>
+                </div>
+                
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect adaptation across all devices and screen sizes</p>
+                </div>
+                
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Seamless theme switching with beautiful color transitions</p>
+                </div>
+                
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Copy & Paste</h3>
+                    <p>One-click code copying with syntax highlighting</p>
+                </div>
+                
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Effects</h3>
+                    <p>Stunning 3D transforms and perspective animations</p>
+                </div>
+                
+                <div class="feature-card glass-effect hover-lift">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized animations for 60fps smooth performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Component Categories</h2>
+                <p class="section-description">Explore our premium component collection</p>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="buttons.html" class="category-card glass-effect hover-tilt">
+                    <div class="category-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>Buttons</h3>
+                    <p>15+ Premium button variants with advanced hover effects</p>
+                    <div class="category-preview">
+                        <div class="preview-btn primary"></div>
+                        <div class="preview-btn secondary"></div>
+                        <div class="preview-btn accent"></div>
+                    </div>
+                    <span class="category-count">15+ Variants</span>
+                </a>
+                
+                <a href="cards.html" class="category-card glass-effect hover-tilt">
+                    <div class="category-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Cards</h3>
+                    <p>Beautiful card designs with glassmorphism effects</p>
+                    <div class="category-preview">
+                        <div class="preview-card-mini"></div>
+                        <div class="preview-card-mini"></div>
+                    </div>
+                    <span class="category-count">12+ Variants</span>
+                </a>
+                
+                <a href="navbars.html" class="category-card glass-effect hover-tilt">
+                    <div class="category-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h3>Navigation</h3>
+                    <p>Responsive navigation bars with smooth animations</p>
+                    <div class="category-preview">
+                        <div class="preview-nav"></div>
+                    </div>
+                    <span class="category-count">10+ Variants</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <div class="logo-icon glow-effect">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <span class="logo-text gradient-text">PremiumUI</span>
+                    </div>
+                    <p>The most advanced CSS component library for modern web development.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Components</h4>
+                        <a href="buttons.html">Buttons</a>
+                        <a href="cards.html">Cards</a>
+                        <a href="navbars.html">Navigation</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#documentation">Documentation</a>
+                        <a href="#examples">Examples</a>
+                        <a href="#support">Support</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link magnetic-hover">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link magnetic-hover">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link magnetic-hover">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PremiumUI. Crafted with ❤️ for the PW Skills Hackathon.</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

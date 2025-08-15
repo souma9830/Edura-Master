@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Buttons - CSS Component Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-mode">
+
+    <!-- Navigation -->
+    <nav class="premium-nav glass-effect">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-icon glow-effect">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <span class="logo-text gradient-text">PremiumUI</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link magnetic-hover">Home</a>
+                <a href="buttons.html" class="nav-link magnetic-hover active">Buttons</a>
+                <a href="cards.html" class="nav-link magnetic-hover">Cards</a>
+                <a href="navbars.html" class="nav-link magnetic-hover">Navbars</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-links">
+                <a href="index.html" class="nav-link magnetic-hover">Home</a>
+                <a href="buttons.html" class="nav-link magnetic-hover active">Buttons</a>
+                <a href="cards.html" class="nav-link magnetic-hover">Cards</a>
+                <a href="navbars.html" class="nav-link magnetic-hover">Navbars</a>
+            </div>
+            <div class="mobile-menu-actions">
+                <button class="theme-toggle-btn" id="mobileThemeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="component-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title gradient-text">Premium Buttons</h1>
+                <p class="section-description">
+                    Stunning button components with advanced hover effects, animations, and interactive features.
+                    Perfect for modern web applications and award-winning designs.
+                </p>
+            </div>
+
+            <!-- Button Components Grid -->
+            <div class="component-grid">
+
+                <!-- Primary Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Primary Button</h3>
+                        <div class="component-actions">
+                            <button class="copy-btn" data-type="html" data-code="primary-button-html">
+                                <i class="fas fa-copy"></i> Copy HTML
+                            </button>
+                            <button class="copy-btn" data-type="css" data-code="primary-button-css">
+                                <i class="fas fa-copy"></i> Copy CSS
+                            </button>
+                        </div>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-primary animate-pulse">
+                            <span>Click Me</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-primary"&gt;
+    &lt;span&gt;Click Me&lt;/span&gt;
+    &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                    <div class="component-css">
+                        <pre><code>.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Gradient Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Gradient Button</h3>
+                        <div class="component-actions">
+                            <button class="copy-btn" data-type="html" data-code="gradient-button-html">
+                                <i class="fas fa-copy"></i> Copy HTML
+                            </button>
+                            <button class="copy-btn" data-type="css" data-code="gradient-button-css">
+                                <i class="fas fa-copy"></i> Copy CSS
+                            </button>
+                        </div>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-gradient animate-gradientShift">
+                            <span>Gradient Magic</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-gradient"&gt;
+    &lt;span&gt;Gradient Magic&lt;/span&gt;
+    &lt;div class="btn-glow"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                    <div class="component-css">
+                        <pre><code>.btn-gradient {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-glow {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-gradient:hover .btn-glow {
+    left: 100%;
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Neon Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Neon Button</h3>
+                        <button class="copy-btn" data-code="neon-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-neon animate-neonGlow">
+                            <span>Neon Effect</span>
+                            <div class="neon-border"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-neon"&gt;
+    &lt;span&gt;Neon Effect&lt;/span&gt;
+    &lt;div class="neon-border"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Glass Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Glass Button</h3>
+                        <button class="copy-btn" data-code="glass-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-glass hover-glow">
+                            <span>Glassmorphism</span>
+                            <div class="glass-shine"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-glass"&gt;
+    &lt;span&gt;Glassmorphism&lt;/span&gt;
+    &lt;div class="glass-shine"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- 3D Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">3D Button</h3>
+                        <button class="copy-btn" data-code="3d-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-3d hover-tilt">
+                            <span>3D Transform</span>
+                            <div class="btn-depth"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-3d"&gt;
+    &lt;span&gt;3D Transform&lt;/span&gt;
+    &lt;div class="btn-depth"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Holographic Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Holographic Button</h3>
+                        <button class="copy-btn" data-code="holographic-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-holographic animate-holographic">
+                            <span>Holographic</span>
+                            <div class="holo-overlay"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-holographic"&gt;
+    &lt;span&gt;Holographic&lt;/span&gt;
+    &lt;div class="holo-overlay"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Morphing Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Morphing Button</h3>
+                        <button class="copy-btn" data-code="morphing-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-morph hover-grow">
+                            <span>Morphing Shape</span>
+                            <div class="morph-bg"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-morph"&gt;
+    &lt;span&gt;Morphing Shape&lt;/span&gt;
+    &lt;div class="morph-bg"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Loading Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Loading Button</h3>
+                        <button class="copy-btn" data-code="loading-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-loading" onclick="this.classList.toggle('loading')">
+                            <span class="btn-text">Click to Load</span>
+                            <span class="btn-loader">
+                                <div class="loading"></div>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-loading"&gt;
+    &lt;span class="btn-text"&gt;Click to Load&lt;/span&gt;
+    &lt;span class="btn-loader"&gt;
+        &lt;div class="loading"&gt;&lt;/div&gt;
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Particle Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Particle Button</h3>
+                        <button class="copy-btn" data-code="particle-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-particle">
+                            <span>Particle Effect</span>
+                            <div class="particles">
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-particle"&gt;
+    &lt;span&gt;Particle Effect&lt;/span&gt;
+    &lt;div class="particles"&gt;
+        &lt;div class="particle"&gt;&lt;/div&gt;
+        &lt;div class="particle"&gt;&lt;/div&gt;
+        &lt;div class="particle"&gt;&lt;/div&gt;
+        &lt;div class="particle"&gt;&lt;/div&gt;
+        &lt;div class="particle"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Magnetic Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Magnetic Button</h3>
+                        <button class="copy-btn" data-code="magnetic-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-magnetic magnetic-hover">
+                            <span>Magnetic Pull</span>
+                            <div class="magnetic-field"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-magnetic magnetic-hover"&gt;
+    &lt;span&gt;Magnetic Pull&lt;/span&gt;
+    &lt;div class="magnetic-field"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Ripple Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Ripple Button</h3>
+                        <button class="copy-btn" data-code="ripple-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-ripple">
+                            <span>Ripple Wave</span>
+                            <div class="ripple-effect"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-ripple"&gt;
+    &lt;span&gt;Ripple Wave&lt;/span&gt;
+    &lt;div class="ripple-effect"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Ghost Button -->
+                <div class="component-card glass-effect hover-lift">
+                    <div class="component-header">
+                        <h3 class="component-title">Ghost Button</h3>
+                        <button class="copy-btn" data-code="ghost-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="component-demo">
+                        <button class="btn btn-ghost hover-float">
+                            <span>Ghost Style</span>
+                            <div class="ghost-bg"></div>
+                        </button>
+                    </div>
+                    <div class="component-code">
+                        <pre><code>&lt;button class="btn btn-ghost"&gt;
+    &lt;span&gt;Ghost Style&lt;/span&gt;
+    &lt;div class="ghost-bg"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Button Styles -->
+    <style>
+        /* Additional Button Styles */
+        .btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.5);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            color: white;
+            animation: gradientShift 4s ease infinite;
+        }
+
+        .btn-gradient .btn-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            border-radius: inherit;
+            filter: blur(10px);
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        .btn-neon {
+            background: transparent;
+            color: #00ffff;
+            border: 2px solid #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+            box-shadow: 
+                0 0 10px #00ffff,
+                inset 0 0 10px rgba(0, 255, 255, 0.1);
+        }
+
+        .btn-neon:hover {
+            background: rgba(0, 255, 255, 0.1);
+            box-shadow: 
+                0 0 20px #00ffff,
+                0 0 40px #00ffff,
+                inset 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+        }
+
+        .btn-glass:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-3d {
+            background: linear-gradient(145deg, #667eea, #764ba2);
+            color: white;
+            transform-style: preserve-3d;
+            box-shadow: 
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 0 2px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-3d:hover {
+            transform: perspective(1000px) rotateX(15deg) rotateY(-15deg) translateY(-5px);
+        }
+
+        .btn-holographic {
+            background: linear-gradient(45deg, #ff0080, #00ff80, #8000ff, #ff8000);
+            background-size: 400% 400%;
+            color: white;
+            position: relative;
+        }
+
+        .btn-holographic::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .btn-holographic:hover::before {
+            transform: translateX(100%);
+        }
+
+        .btn-morph {
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 12px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-morph:hover {
+            border-radius: 50px;
+            transform: scale(1.1);
+        }
+
+        .btn-loading {
+            background: var(--gradient-primary);
+            color: white;
+            position: relative;
+        }
+
+        .btn-loading .btn-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-loading.loading .btn-text {
+            opacity: 0;
+        }
+
+        .btn-loading.loading .btn-loader {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .btn-particle {
+            background: var(--gradient-primary);
+            color: white;
+            position: relative;
+        }
+
+        .btn-particle .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .btn-particle .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            opacity: 0;
+        }
+
+        .btn-particle:hover .particle {
+            animation: particleFloat 1s ease-out infinite;
+        }
+
+        .btn-particle .particle:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+        .btn-particle .particle:nth-child(2) { top: 40%; right: 30%; animation-delay: 0.2s; }
+        .btn-particle .particle:nth-child(3) { bottom: 30%; left: 40%; animation-delay: 0.4s; }
+        .btn-particle .particle:nth-child(4) { top: 60%; left: 60%; animation-delay: 0.6s; }
+        .btn-particle .particle:nth-child(5) { bottom: 20%; right: 20%; animation-delay: 0.8s; }
+
+        .btn-magnetic {
+            background: var(--gradient-primary);
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-ripple {
+            background: var(--gradient-primary);
+            color: white;
+            position: relative;
+        }
+
+        .btn-ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: all 0.6s ease;
+        }
+
+        .btn-ripple:active::after {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            position: relative;
+        }
+
+        .btn-ghost:hover {
+            color: white;
+            border-color: rgba(102, 126, 234, 0.8);
+        }
+
+        .btn-ghost .ghost-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-ghost:hover .ghost-bg {
+            transform: scaleX(1);
+        }
+
+        /* Active nav link style */
+        .nav-link.active {
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
