@@ -30,3 +30,16 @@ This library showcases **creative, modern, and functional navigation bars** — 
 ---
 
 ## 📂 Project Structure
+component-library/
+│
+├── index.html # Homepage with navigation
+├── navbars.html # All navbar variants
+├── style.css # Global styles
+├── script.js # Copy functionality & interactivity
+└── assets/ # Icons, images, etc.
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/navbar-library.git
+cd navbar-library
