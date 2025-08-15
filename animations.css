@@ -679,7 +679,7 @@
     animation: lightSpeedIn 1s ease-out;
 }
 
-/* Attention Seekers */
+
 .animate-bounce {
     animation: bounce 2s infinite;
 }
@@ -720,7 +720,7 @@
     animation: heartBeat 1.3s ease-in-out infinite;
 }
 
-/* Morphing Animations */
+
 .animate-morphToCircle {
     animation: morphTocircle 0.5s ease-in-out;
 }
@@ -742,7 +742,7 @@
     animation: rainbowGradient 6s ease infinite;
 }
 
-/* Glow Effects */
+
 .animate-glowPulse {
     animation: glowPulse 2s ease-in-out infinite;
 }
@@ -751,7 +751,7 @@
     animation: neonGlow 2s ease-in-out infinite;
 }
 
-/* 3D Animations */
+
 .animate-rotate3D {
     animation: rotate3D 3s linear infinite;
     transform-style: preserve-3d;
@@ -767,7 +767,7 @@
     transform-style: preserve-3d;
 }
 
-/* Loading Animations */
+
 .animate-loading {
     animation: loading 1s linear infinite;
 }
@@ -787,7 +787,7 @@
     animation: loadingBars 1.2s infinite ease-in-out;
 }
 
-/* Special Effects */
+
 .animate-holographic {
     background: linear-gradient(45deg, #ff0080, #00ff80, #8000ff, #ff8000);
     background-size: 400% 400%;
@@ -830,7 +830,7 @@
     animation: ripple 0.6s linear;
 }
 
-/* Hover Animations */
+
 .hover-grow:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -866,7 +866,7 @@
     transition: box-shadow 0.3s ease;
 }
 
-/* Scroll Animations */
+
 .scroll-fadeIn {
     opacity: 0;
     transform: translateY(50px);
@@ -911,7 +911,7 @@
     transform: scale(1);
 }
 
-/* Delay Classes */
+
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
@@ -923,24 +923,22 @@
 .delay-900 { animation-delay: 0.9s; }
 .delay-1000 { animation-delay: 1s; }
 
-/* Duration Classes */
+
 .duration-fast { animation-duration: 0.3s; }
 .duration-normal { animation-duration: 0.5s; }
 .duration-slow { animation-duration: 0.8s; }
 .duration-slower { animation-duration: 1.2s; }
 
-/* Easing Classes */
 .ease-in { animation-timing-function: ease-in; }
 .ease-out { animation-timing-function: ease-out; }
 .ease-in-out { animation-timing-function: ease-in-out; }
 .ease-bounce { animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 .ease-elastic { animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-/* Infinite Classes */
 .infinite { animation-iteration-count: infinite; }
 .once { animation-iteration-count: 1; }
 .twice { animation-iteration-count: 2; }
 
-/* Play State Classes */
+
 .paused { animation-play-state: paused; }
 .running { animation-play-state: running; }
