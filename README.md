@@ -6,7 +6,7 @@ This project delivers **10+ visually distinct and reusable navbar layouts**, all
 ## 📌 Overview
 This library showcases **creative, modern, and functional navigation bars** — from minimal designs to feature-packed headers with icons, sticky positioning, and responsive toggles.
 
-**Live Demo:** [https://edura-master.netlify.app/navbarsim](https://edura-master.netlify.app/navbarsim)
+**Live Demo:** [https://edura-master.netlify.app/navbarsim]([https://edura-master.netlify.app/navbarsim](https://edura-master.netlify.app/)
 
 ---
 
